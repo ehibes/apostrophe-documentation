@@ -61,7 +61,7 @@ body
 You can push JavaScript files to the browser too:
 
 ```javascript
-    // This configures the apostrophe-assets module to push a 'site.less'
+    // This configures the apostrophe-assets module to push a 'site.js'
     // stylesheet
     'apostrophe-assets': {
       scripts: [
@@ -72,7 +72,7 @@ You can push JavaScript files to the browser too:
     },
 ```
 
-This will push the file `lib/modules/apostrophe-assets/public/css/site.js` to the browser. If you follow our [production deployment tutorial](../intermediate/deployment.html), it will be included in a single minified file along with Apostrophe's JavaScript, for much better performance. Minification is also provided for stylesheets.
+This will push the file `lib/modules/apostrophe-assets/public/js/site.js` to the browser. If you follow our [production deployment tutorial](../intermediate/deployment.html), it will be included in a single minified file along with Apostrophe's JavaScript, for much better performance. Minification is also provided for stylesheets.
 
 > Want to use `gulp`, `browserify`, `grunt` and friends? Go for it! Just set up your configuration so that the compiled output file is pushed by Apostrophe. Apostrophe doesn't need to know you are using these tools for you to be successful with them. Separation of concerns is a good thing.
 
